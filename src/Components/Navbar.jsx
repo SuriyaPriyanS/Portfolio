@@ -72,8 +72,8 @@ function NavBar() {
                 <a href="https://www.linkedin.com/in/suriya-priyan-ab186721b/"
                   target="_blank"
                   rel="noreferrer"
-                  className="flex items-center text-white hover:text-amber-400 hover:translate-x-2 transition-all duration-300">
-                  <ImBlog className="mr-1" /> Blogs
+                  className="flex items-center text-white hover:text-purple-900 hover:translate-x-2 transition-all duration-300">
+                  <ImBlog className="mr-1" /> Linkedin
                 </a>
               </li>
               <li>
@@ -88,7 +88,7 @@ function NavBar() {
                   href="https://github.com/SuriyaPriyanS/Portfolio"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-2 bg-pink-900 text-gray-900 px-4 py-2 rounded-md shadow-md hover:bg-yellow-600 hover:scale-105 hover:shadow-yellow-400/50 transition-all duration-300"
+                  className="inline-flex items-center gap-2 bg-purple-900 text-gray-900 px-4 py-2 rounded-md shadow-md hover:bg-yellow-600 hover:scale-105 hover:shadow-yellow-400/50 transition-all duration-300"
                 >
                   <CgGitFork className="animate-bounce" />
                   <AiFillStar className="animate-pulse" />

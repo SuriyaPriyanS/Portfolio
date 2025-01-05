@@ -27,9 +27,9 @@ function About() {
               <img
                 src={laptopImg}
                 alt="about"
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
-            </div>
+                className="max-w-full w-full h-auto rounded-lg shadow-lg responsive-img"
+                style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+              />            </div>
           </div>
         </div>
 
