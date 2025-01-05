@@ -25,7 +25,7 @@ function Projects() {
               title="AspireKaleidoscope"
               description="Simple blogger Application build with React.js, Bootstrap, Nodejs and MongoDB."
               ghLink="https://github.com/anandhakumarmca/simplebloggerapp-frontend"
-              demoLink="https://simplebloggerapp91.netlify.app/"
+              demoLink="https://eventopulse.boothmaven.com/"
             />
           </Grid2>
 
