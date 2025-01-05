@@ -1,8 +1,22 @@
+/* globals.css or index.css */
+
+/* Google Font Import */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+
+/* Apply Tailwind's Reset and your custom styles */
 body {
   margin: 0;
-  font-family: "Raleway", serif !important;
-  -webkit-font-smoothing: antialiased;
+  font-family: "Raleway", serif !important; /* Custom font */
+  -webkit-font-smoothing: antialiased; /* Smoothing for better font rendering */
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+  background-image: linear-gradient(to left, rgb(34, 34, 34), rgb(20 15 35)); /* Background gradient */
+}
+
+/* Tailwind resets default styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }

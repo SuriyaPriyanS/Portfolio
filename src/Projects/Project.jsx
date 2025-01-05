@@ -1,5 +1,6 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Box, Typography,Grid2 } from "@mui/material";
+//import Grid2 from "@mui/material/Unstable_Grid2"; // Import Grid2
 import ProjectCard from "./ProjectsCard";
 import Particle from "../Components/Partical";
 import editor from "../Assets/Myproject/Myproject.png";
@@ -7,17 +8,17 @@ import bitsOfCode from "../Assets/Myproject/blogApp.png.png";
 
 function Projects() {
   return (
-    <Container fluid className="project-section">
+    <Box className="py-20 bg-gray-900 project-section">
       <Particle />
-      <Container>
-        <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
-        </h1>
-        <p style={{ color: "white" }}>
+      <Box className="max-w-screen-xl mx-auto px-8">
+        <Typography variant="h2" className="text-white text-4xl font-semibold">
+          My Recent <strong className="text-purple-600">Works</strong>
+        </Typography>
+        <Typography variant="body1" className="text-white mt-4 mb-8">
           Here are a few projects I've worked on recently.
-        </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+        </Typography>
+        <Grid2 container spacing={4} justifyContent="center">
+          <Grid2 xs={12} md={4}>
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
@@ -26,21 +27,21 @@ function Projects() {
               ghLink="https://github.com/anandhakumarmca/simplebloggerapp-frontend"
               demoLink="https://simplebloggerapp91.netlify.app/"
             />
-          </Col>
+          </Grid2>
 
-          <Col md={4} className="project-card">
+          <Grid2 xs={12} md={4}>
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="PetPlatfrom App"
-              description="Simple Adpation  Application build with React.js, Bootstrap, Nodejs and MongoDB."
+              title="PetPlatform App"
+              description="Simple Adoption Application build with React.js, Bootstrap, Nodejs and MongoDB."
               ghLink="https://github.com/SuriyaPriyanS/FrontendAddpet"
               demoLink="https://adoptionpetplafrom.netlify.app/"
             />
-          </Col>
-        </Row>
-      </Container>
-    </Container>
+          </Grid2>
+        </Grid2>
+      </Box>
+    </Box>
   );
 }
 

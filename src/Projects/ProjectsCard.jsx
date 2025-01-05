@@ -1,40 +1,54 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+import { Card, CardMedia, CardContent, Button, Typography } from "@mui/material"; // MUI imports
 
 function ProjectCards(props) {
   return (
-    <Card className="project-card-view ">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
-      <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
+    <Card className="max-w-xs mx-4 my-4 bg-gray-800 text-white rounded-lg shadow-lg overflow-hidden">
+      <CardMedia
+        component="img"
+        height="200"
+        image={props.imgPath}
+        alt="project-image"
+        className="object-cover"
+      />
+      <CardContent className="p-4">
+        <Typography variant="h5" component="h2" className="text-xl font-semibold">
+          {props.title}
+        </Typography>
+        <Typography variant="body2" className="text-sm text-gray-300 mt-2 mb-4 text-justify">
           {props.description}
-        </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
-        {"\n"}
-        {"\n"}
-
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
-        {!props.isBlog && props.demoLink && (
+        </Typography>
+        <div className="flex flex-wrap justify-start">
           <Button
-            variant="primary"
-            href={props.demoLink}
+            href={props.ghLink}
             target="_blank"
-            style={{ marginLeft: "10px" }}
+            rel="noreferrer"
+            className="inline-flex items-center px-4 py-2 mr-3 mb-3 bg-purple-600 text-white rounded-md hover:bg-purple-700"
+            disabled
           >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
+            <BsGithub className="mr-2" />
+            {props.isBlog ? "Blog" : "GitHub"}
           </Button>
-        )}
-      </Card.Body>
+
+          {/* If the component contains Demo link and it's not a Blog, it will render the Demo button */}
+          {!props.isBlog && props.demoLink && (
+            <Button
+              href={props.demoLink}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
+              disabled
+            >
+              <CgWebsite className="mr-2" />
+              Demo
+            </Button>
+          )}
+        </div>
+      </CardContent>
     </Card>
   );
 }
+
 export default ProjectCards;

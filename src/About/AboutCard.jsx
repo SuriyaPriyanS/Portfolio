@@ -1,38 +1,35 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
+import { Card, Typography, CardContent } from "@mui/material";  // MUI components
+import { ImPointRight } from "react-icons/im";  // React Icons
 
 function AboutCard() {
   return (
-    <Card className="quote-card-view">
-      <Card.Body>
-        <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            Hello, I am <span className="purple">Suriyapriyan </span>
-            from <span className="purple"> Tamilnadu, India.</span>
-            <br />
-            I am currently looking for as a Full-Stack developer intership.
-            <br />
-            I have completed Master of Computer Apllication at ACCET
-            Theni
-            <br />
-            <br />
-            Apart from coding, some other activities that I love to do!
-          </p>
-          <ul>
-            
-            
-            <li className="about-activity">
-              <ImPointRight /> Listening Music
-            </li>
-          </ul>
+    <Card className="w-full max-w-[95%] sm:max-w-[85%] md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto my-4 sm:my-6 p-3 sm:p-4 bg-gray-800 text-gray-700 rounded-lg shadow-md">
+      <CardContent className="text-black-800">
+        <Typography variant="body1" className="text-justify mb-3 sm:mb-4 text-base sm:text-lg font-medium leading-relaxed text-gray-800">
+          Hello, I am <span className="text-purple-500">Suriyapriyan</span>
+          from <span className="text-purple-500">Tamil Nadu, India.</span>
+          <br />
+          I am currently working as a Full-Stack Developer Intern at MercuryMinds, where I am gaining real-world experience in full-stack development and contributing to live projects. This internship has allowed me to apply my knowledge of both front-end and back-end technologies in a professional environment.
+          <br />
+          <br />
+          Apart from coding, some other activities that I love to do:
+        </Typography>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Hard work Never Fails!"{" "}
-          </p>
-          <footer className="blockquote-footer">Suriya</footer>
-        </blockquote>
-      </Card.Body>
+        <ul className="list-none pl-0">
+          <li className="flex items-center mb-2">
+            <ImPointRight className="mr-2 text-purple-500" />
+            Listening to Music
+          </li>
+        </ul>
+
+        <Typography variant="body2" className="text-base sm:text-xl text-gray-300 mt-3 sm:mt-4">
+          "Hard work Never Fails!"
+        </Typography>
+        <footer className="text-sm sm:text-base text-gray-400 mt-2 text-right">
+          - Suriya
+        </footer>
+      </CardContent>
     </Card>
   );
 }

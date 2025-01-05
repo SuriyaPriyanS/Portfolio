@@ -1,23 +1,25 @@
+/* globals.css or index.css */
+
+/* Root element styling */
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  @apply max-w-7xl mx-auto p-8 text-center;
 }
 
+/* Logo styling */
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  @apply h-24 p-6 transition-all duration-300;
   will-change: filter;
-  transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/* Animation for logo spin */
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -33,10 +35,15 @@
   }
 }
 
+/* Card styling */
 .card {
-  padding: 2em;
+  @apply p-8;
 }
 
+/* Styling for the read-the-docs class */
 .read-the-docs {
-  color: #888;
+  @apply text-gray-500;
+}
+.tech-icon{
+  padding:20px;
 }

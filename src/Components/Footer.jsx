@@ -1,5 +1,4 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import {
   AiFillGithub,
   AiOutlineTwitter,
@@ -12,61 +11,64 @@ const Footer = () => {
   let year = date.getFullYear();
 
   return (
-    <Container fluid className="footer">
-      <Row>
-        <Col md="4" className="footer-copywright">
-          <h3>Design adopted from Sp</h3>
-        </Col>
-        <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} AK</h3>
-        </Col>
-        <Col md="4" className="footer-body">
-          <ul className="footer-icons">
-            <li className="social-icons">
+    <footer className="bg-gray-900 text-white py-8 px-4 md:px-8">
+      <div className="container mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {/* Left Section */}
+          <div className="text-center md:text-left">
+            <h6 className="text-lg md:text-xl font-semibold">
+              Design adopted from Sp
+            </h6>
+          </div>
+
+          {/* Center Section */}
+          <div className="text-center">
+            <h6 className="text-lg md:text-xl font-semibold">
+              Copyright © {year} Sp
+            </h6>
+          </div>
+
+          {/* Right Section with Social Links */}
+          {/* <div className="flex justify-center md:justify-end">
+            <div className="flex space-x-4">
               <a
                 href="https://github.com/SuriyaPriyanS"
-                style={{ color: "white" }}
-                target="_blank" 
+                className="text-white hover:text-gray-300 transition-colors"
+                target="_blank"
                 rel="noopener noreferrer"
               >
-                <AiFillGithub />
+                <AiFillGithub className="w-7 h-7" />
               </a>
-            </li>
-            <li className="social-icons">
               <a
-                href=""
-                style={{ color: "white" }}
-                target="_blank" 
+                href="https://twitter.com"
+                className="text-white hover:text-gray-300 transition-colors"
+                target="_blank"
                 rel="noopener noreferrer"
               >
-                <AiOutlineTwitter />
+                <AiOutlineTwitter className="w-7 h-7" />
               </a>
-            </li>
-            <li className="social-icons">
               <a
                 href="https://www.linkedin.com/in/suriya-priyan-ab186721b/"
-                style={{ color: "white" }}
-                target="_blank" 
+                className="text-white hover:text-gray-300 transition-colors"
+                target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaLinkedinIn />
+                <FaLinkedinIn className="w-7 h-7" />
               </a>
-            </li>
-            <li className="social-icons">
               <a
-                href="https://www.linkedin.com/in/suriya-priyan-ab186721b/"
-                style={{ color: "white" }}
-                target="_blank" 
+                href="https://www.instagram.com"
+                className="text-white hover:text-gray-300 transition-colors"
+                target="_blank"
                 rel="noopener noreferrer"
               >
-                <AiFillInstagram />
+                <AiFillInstagram className="w-7 h-7" />
               </a>
-            </li>
-          </ul>
-        </Col>
-      </Row>
-    </Container>
+            </div>
+          </div> */}
+        </div>
+      </div>
+    </footer>
   );
-}
+};
 
 export default Footer;
