@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Button, Grid, Container, Typography, Paper, Fade, Zoom } from "@mui/material";
-import Particle from "../Partical";
+//import Particle from "../Partical";
 import pdf from "../../Assets/FullstockresumeOut1.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
@@ -21,7 +21,7 @@ function ResumeNew() {
 
   return (
     <Container maxWidth={false} className="bg-gray-900 relative min-h-screen py-10">
-      <Particle />
+      {/* <Particle /> */}
       <Fade in={showContent} timeout={1000}>
         <Grid container spacing={3} justifyContent="center" className="relative">
           <Grid item xs={12}>

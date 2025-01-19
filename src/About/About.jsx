@@ -1,5 +1,5 @@
 import React from "react";
-import Particle from "../Components/Partical";
+//import Particle from "../Components/Partical";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
@@ -9,7 +9,7 @@ import Toolstack from "./Tools";
 function About() {
   return (
     <div className="w-full relative">
-      <Particle />
+      {/* <Particle /> */}
 
       <div className="container mx-auto px-4 max-w-screen-xl">
         <div className="grid grid-cols-12 gap-8 py-12">

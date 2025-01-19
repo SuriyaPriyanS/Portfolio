@@ -29,7 +29,7 @@ const Footer = () => {
           </div>
 
           {/* Right Section with Social Links */}
-          {/* <div className="flex justify-center md:justify-end">
+          <div className="flex justify-center md:justify-end">
             <div className="flex space-x-4">
               <a
                 href="https://github.com/SuriyaPriyanS"
@@ -64,7 +64,7 @@ const Footer = () => {
                 <AiFillInstagram className="w-7 h-7" />
               </a>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </footer>

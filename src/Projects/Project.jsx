@@ -2,14 +2,14 @@ import React from "react";
 import { Box, Typography,Grid2 } from "@mui/material";
 //import Grid2 from "@mui/material/Unstable_Grid2"; // Import Grid2
 import ProjectCard from "./ProjectsCard";
-import Particle from "../Components/Partical";
+//import Particle from "../Components/Partical";
 import editor from "../Assets/Myproject/Myproject.png";
 import bitsOfCode from "../Assets/Myproject/blogApp.png.png";
 
 function Projects() {
   return (
     <Box className="py-20 bg-gray-900 project-section">
-      <Particle />
+      {/* <Particle /> */}
       <Box className="max-w-screen-xl mx-auto px-8">
         <Typography variant="h2" className="text-white text-4xl font-semibold">
           My Recent <strong className="text-purple-600">Works</strong>
@@ -24,7 +24,7 @@ function Projects() {
               isBlog={false}
               title="AspireKaleidoscope"
               description="Simple blogger Application build with React.js, Bootstrap, Nodejs and MongoDB."
-              ghLink="https://github.com/anandhakumarmca/simplebloggerapp-frontend"
+              // ghLink=""
               demoLink="https://eventopulse.boothmaven.com/"
             />
           </Grid2>
