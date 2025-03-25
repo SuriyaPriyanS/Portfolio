@@ -22,8 +22,8 @@ function Projects() {
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
-              title="AspireKaleidoscope"
-              description="Simple blogger Application build with React.js, Bootstrap, Nodejs and MongoDB."
+              title="Eventopulse"
+              description="Eventopulse in currently worked developed next.js and react.js, node.js and mongodb"
               // ghLink=""
               demoLink="https://eventopulse.boothmaven.com/"
             />

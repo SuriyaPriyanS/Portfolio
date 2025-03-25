@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Button, Grid, Container, Typography, Paper, Fade, Zoom } from "@mui/material";
 //import Particle from "../Partical";
-import pdf from "../../Assets/FullstockresumeOut1.pdf";
+import pdf from "../../Assets/SURIYAPRIYAN S(gk Edited) (1).pdf"
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";

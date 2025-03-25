@@ -10,7 +10,7 @@ function AboutCard() {
           Hello, I am <span className="text-purple-500">Suriyapriyan</span>
           from <span className="text-purple-500">Tamil Nadu, India.</span>
           <br />
-          I am currently working as a Full-Stack Developer Intern at MercuryMinds, where I am gaining real-world experience in full-stack development and contributing to live projects. This internship has allowed me to apply my knowledge of both front-end and back-end technologies in a professional environment.
+          I am currently working as a Full-Stack Developer  at MercuryMinds, where I am gaining real-world experience in full-stack development and contributing to live projects. This  has allowed me to apply my knowledge of both front-end and back-end technologies in a professional environment.
           <br />
           <br />
           Apart from coding, some other activities that I love to do:
